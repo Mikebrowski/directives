@@ -1,0 +1,60 @@
+<section>
+   <h1>THIS EXAMPLE IS FOR NGFOR</h1> 
+    <p>LIST BELOW:</p>
+    <ul>
+
+        <!-- THIS IS A EXPORTED VALUE SUCH AS INDEX INSIDE THE DIRECTIVE -->
+        <!-- as is like PUTING AN ID -->
+        <li *ngFor="let course of courses; index as i">
+        {{course.name}}
+        {{theIdentifier+ course.id }} 
+        </li>
+
+        <li *ngFor="let course of courses; index as i">
+            {{i}}- {{course.name}} 
+            </li>
+        <!-- MOST OF THESE ARE BOOLEAN SUCH LAST EVEN OR ODD -->
+        <li *ngFor="let course of courses; last as theLastValue">
+                {{theLastValue}}- {{course.name}} <span *ngIf="theLastValue">(LAST)</span>
+         </li>
+    </ul>
+</section>
+
+
+
+<section>
+    <button (click)="onAddElement()">ADD</button>
+    <ul>
+        <li *ngFor="let course of courses; index as i">
+            {{i}}- {{course.name}} - {{course.isCompleted}} 
+            <button (click)="onRemoveElement(course)">REMOVE</button>
+            <button (click)="onChange(course)">CHANGE</button>
+        </li>
+     <!--    <li *ngFor="let course of courses;"
+        [ngClass]="courses.isCompleted ? 'green': 'red'"></li> -->
+
+    </ul>
+    
+   
+
+</section>
+<h1>HERE WE ARE</h1>
+
+<ul>
+
+  
+    <li *ngFor="let course of courses;">
+    {{course.name}}
+    {{theIdentifier+ course.id }}  <span *ngIf="course.id === 1">(X)</span>
+
+    </li>
+
+    <li *ngFor="let course of courses; index as i">
+        {{i}}- {{course.name}} 
+        </li>
+    <!-- MOST OF THESE ARE BOOLEAN SUCH LAST EVEN OR ODD -->
+    <li *ngFor="let course of courses; last as theLastValue">
+            {{theLastValue}}- {{course.name}} <span *ngIf="theLastValue">(LAST)</span>
+     </li>
+</ul>
+

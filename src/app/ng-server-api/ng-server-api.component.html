@@ -1,0 +1,35 @@
+<section>
+    <h1> IN THIS EXAMPLE YOU SEE IT FROM A API PRESPECTIVE</h1>
+
+<button class="" (click)="grabData()">Load DATA</button>
+<ul>
+    <!-- by default angular tracks the objects IDENTITY -->
+<!-- IN THIS EXAPLE YOU ARE RECIVE THE API FROM A SERVE CRUCIALLLL -->
+    <li *ngFor="let course of courses; trackBy: tackCourse">
+    {{course.name}}
+    {{course.id }} 
+    </li>
+
+</ul>
+</section>
+
+
+<section>
+    <h1> IN THIS EXAMPLE YOU SEE IT FROM A API BUT USING TRACKBY </h1>
+    <h2> TRACKBY IS HANDY WHEN DEALING WITH PREFORMANCE ISSUES WINK </h2>
+
+<button class="" (click)="grabData()">Load DATA</button>
+<ul>
+    <!-- by default angular tracks the objects IDENTITY -->
+<!-- IN THIS EXAPLE YOU ARE RECIVE THE API FROM A SERVE CRUCIALLLL -->
+    <li *ngFor="let course of courses;">
+    {{course.name}}
+    {{course.id }} 
+    </li>
+
+</ul>
+</section>
+
+<div >
+
+</div>
