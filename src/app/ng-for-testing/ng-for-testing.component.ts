@@ -32,7 +32,6 @@ export class NgForTestingComponent implements OnInit {
   onChange(course:any){
     course.name='UPDATED';
     course.isCompleted=!course
-
   }
 
 }

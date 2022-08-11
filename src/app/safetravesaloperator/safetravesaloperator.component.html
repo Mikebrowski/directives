@@ -1,0 +1,27 @@
+
+
+<section><h1>WHENEVER YOUR DEALING WITH UNKNOWN VALUES OR UNDIFINED VALUES IN A ARRAY OR INTERFACE(MODEL) USE *NGIF</h1> 
+<b><p>{{task.assignee.name}}</p></b>
+<p *ngIf="task.assignee">{{task.assignee.name}}</p>
+<p>{{task2?.title}} IN THIS ONE IT ALLOWS FOR NULL OR UNDIFINED</p>
+</section>
+
+
+
+<section>
+    <h1> YOU CAN GENERATE DIRECTIVES IN ANGULAR , COMMAND: NG GENERATE DIRECTIVE awesomedirective</h1>
+
+    <p>A pipe gets data as an input, transforms it and outputs this data in another way.</p>
+    <p>A directive gets a DOM element it's "attached" to and enhances it with some kind of features.</p>
+                <!-- THE DIRECTIVE CUSTOM ONE       PROPERTY BINDING -->
+   <!-- <input type="text" appAwesomeinput               [format]="'uppercase'">  -->
+
+
+   <p>ANOTHER ONE TO IMPLEMENT</p>
+    <!-- HERE IS ANOTHER WAY YOU CAN IMPLEMENT IT  -->
+    <input type="text" [appInputFormat]="'uppercase'"> 
+
+    
+</section>
+
+

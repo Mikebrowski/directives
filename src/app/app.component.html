@@ -60,7 +60,7 @@ NG TEMPLATE: No courses yet
 
 </div>
 
-<section>
+<section class="aboutSec">
   <!-- IN SOME SITUATIONS BUILDING A LARGE ELEMENT WITH AN ELEMENT SUBTREES THE NG MAY IMPACT PERFORMANCE NEGATIVILY  -->
 <h1> IMPORTANT</h1>
 <h2> NGIF IS BEST FOR LARGE AMOUNT OF DATAT IN TREES </h2>
@@ -98,3 +98,39 @@ NG TEMPLATE: No courses yet
 
 
 <app-ng-server-api></app-ng-server-api>
+
+<span class="something"
+[class.something]="isSelected"
+[class.something-diffrent]="!isSelected "
+>
+</span>
+
+<span class="something-X"
+[class.something]="isSelected"
+[class.something-diffrent]="!isSelected "
+>
+
+<!-- WITH THE CLASS BINDING DIRECTIVE YOU AN REAPET THE BINDING TWICE -->
+<!-- [class.something]="isSelected"
+[class.something-diffrent]="!isSelected " VS THE CLASS BINDING DIRECTIVE
+ -->
+<section class="aboutSec"> <h1>EXAMPLES OF NG CLASS and LEADING ASTERISK AKA THIS *</h1>
+
+<!-- HEREIS THE EXAMPLE WITH THE LEADING ASTERISK -->
+
+<ng-template ngIf="courses.length > 0; else noCourses">
+  list OF COURESEES  
+</ng-template>
+
+<ng-template ngIf="!(courses.length > 0);">
+  NO COURESES 
+</ng-template>
+
+</section>
+
+
+<section class="FullWidthsection"><h1>THIS SECTION PRACTICE THE NG CLASS </h1>
+<app-ngclass-p class="container"></app-ngclass-p>
+</section>
+
+<app-safetravesaloperator></app-safetravesaloperator>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 //import {assets} from 'src/assets/NGIFvsHIDDEN.png'
 //const explainPic = require('../assets/NGIFvsHIDDEN.png').default as string;
 
@@ -9,6 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
+
+
+  isSelected: boolean= false; 
   courses=[1,2,3]
   title = 'directives';
   viewMode='somethingElse';

@@ -1,0 +1,33 @@
+<!-- NG CLASS IS USE TO CLEAN UP MULTIPLE CLASS BINDINGS-->
+
+<ul *ngFor="let person of people">
+    <li [ngStyle]="{'font-size.px':30}"
+        [style.color]="getColor(person.country)">{{ person.name }} ({{ person.country }})
+    </li>
+</ul>
+
+                                    <!-- THIS EITHER  -->
+
+<h2>THIS WAY IS THE BEST IN MY OPTIONION</h2>
+<button 
+[style.backgroundColor]="changeState ? 'white': 'brown'"
+[style.color]="changeState ? 'black': 'white'"
+[style.font-size]="changeState ?'40': '30'"
+[style.fontweight]="changeState ?'bold': 'normal'"
+[style.width.px]="350">GIIIIANT</button>
+
+
+<button [ngStyle]="{
+'backgroundColor': changeState ? 'gray': 'blue', 
+'width.px': width , 
+'color': changeState ? 'green':'black'
+}"
+
+>GIIIIANT</button>
+
+<!-- YOU CAN USE BOTH NOT  -->
+
+<button [ngStyle]="{'width.px': width}">THIS BUTTON USES DIFFRENT CONOTATION </button>
+
+
+<p> TO BE HONEST I PREFER THE ORGINAL ONE OVER NG STYLES SINCE IT SHOWS CLEALRY EACH SIUATION AND ATTRIBUIDE</p>

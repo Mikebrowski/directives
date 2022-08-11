@@ -11,7 +11,9 @@ export class NgServerApiComponent implements OnInit {
   courses:any[]= [];
   b:boolean= false; 
   
-  //name = urlApi  
+  //x:boolean = true;
+ // StringX: string = "WTF";
+  
 
 /*  courses= [
     {id:1, name:'English', isCompleted:false},
@@ -34,7 +36,8 @@ export class NgServerApiComponent implements OnInit {
       {id:2, name:'Norweigan', isCompleted:true},
       {id:3, name:'Greek', isCompleted:false},
     ]; 
-  }
+  }  
+  
   grabData2(){
     this.b= true; 
   }
